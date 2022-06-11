@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:phonepe/blue_row.dart';
-import 'package:phonepe/bottom_navigation.dart';
-import 'package:phonepe/upper_container.dart';
+import 'package:phonepe/homePage/blue_row.dart';
+import 'package:phonepe/homePage/bottom_navigation.dart';
+import 'package:phonepe/homePage/recharge_bill_container.dart';
+import 'package:phonepe/homePage/upper_container.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -94,14 +95,23 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          upperContainer(),
-          SizedBox(
-            height: 10,
-          ),
-          blueContainer(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            upperContainer(),
+            SizedBox(
+              height: 10,
+            ),
+            blueContainer(),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: RechargeBillContainer(),
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: bottomNavigation(),
     );

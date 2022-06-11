@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:phonepe/HistoryPage/history.dart';
 
 class bottomNavigation extends StatelessWidget {
   const bottomNavigation({
@@ -119,10 +120,22 @@ class bottomNavigation extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: Colors.grey,
                   ),
-                  child: Icon(
-                    FontAwesomeIcons.arrowRightArrowLeft,
-                    color: Colors.white,
+                  child: IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HistoryScreen()));
+                    },
+                    icon: Icon(
+                      FontAwesomeIcons.arrowRightArrowLeft,
+                      color: Colors.white,
+                    ),
                   ),
+                  // child: Icon(
+                  //   FontAwesomeIcons.arrowRightArrowLeft,
+                  //   color: Colors.white,
+                  // ),
                 ),
                 Text(
                   "History",

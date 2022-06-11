@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:phonepe/history.dart';
-import 'package:phonepe/home.dart';
+import 'package:phonepe/HistoryPage/history.dart';
+import 'package:phonepe/homePage/home.dart';
 
 void main() {
   runApp(const MyApp());
