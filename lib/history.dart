@@ -343,35 +343,15 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   ),
                 ),
               ),
-              Column(
-                children: [
-                  Text(
-                    "Powered by",
-                    style: TextStyle(
-                      color: Colors.grey[500],
-                      fontSize: 15,
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        height: 50,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            color: Color.fromRGBO(240, 226, 255, 1.0),
-                            image: DecorationImage(
-                                image: AssetImage("assets/upi.png"),
-                                fit: BoxFit.fill)),
-                      )
-                      // Image.asset(
-                      //   "assets/upi.png",
-                      //
-                      // ),
-                    ],
-                  ),
-                ],
-              ),
+              // Column(
+              //   children: [
+              //     Text(
+              //       "Powered by",
+              //       style: TextStyle(
+              //         color: Colors.grey[500],
+              //         fontSize: 15,
+              //       ),
+              //     ),
             ],
           ),
         ),
