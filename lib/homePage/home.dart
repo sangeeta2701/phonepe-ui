@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:phonepe/homePage/blue_row.dart';
 import 'package:phonepe/homePage/bottom_navigation.dart';
 import 'package:phonepe/homePage/recharge_bill_container.dart';
@@ -13,90 +12,87 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(240, 226, 255, 1.0),
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70),
-        child: AppBar(
-          backgroundColor: Color.fromRGBO(119, 12, 143, 1.0),
-          leading: Padding(
-            padding: const EdgeInsets.all(8),
-            child: Container(
-              height: 60,
-              width: 50,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.white,
-              ),
-              child: Icon(
-                Icons.person_outline,
-                color: Colors.purple,
-                size: 28,
-              ),
-            ),
-          ),
-          title: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 15,
-                ),
-                child: Row(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        "Add Addr...",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Icon(
-                      Icons.arrow_drop_down,
-                      color: Colors.white,
-                    )
-                  ],
-                ),
-              ),
-              TextField(
-                style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                    hintText: 'Enter city name',
-                    hintStyle: TextStyle(color: Colors.white)),
-              ),
-            ],
-          ),
-          actions: [
-            Icon(
-              Icons.qr_code_scanner,
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(119, 12, 143, 1.0),
+        leading: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Container(
+            height: 60,
+            width: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
               color: Colors.white,
+            ),
+            child: Icon(
+              Icons.person_outline,
+              color: Colors.purple,
               size: 28,
             ),
-            SizedBox(
-              width: 8,
+          ),
+        ),
+        title: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 15.0),
+              child: Row(
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Add Addr...",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Icon(
+                    Icons.arrow_drop_down,
+                    color: Colors.white,
+                  )
+                ],
+              ),
             ),
-            Icon(
-              Icons.notifications,
-              color: Colors.white,
-              size: 28,
-            ),
-            SizedBox(
-              width: 8,
-            ),
-            Icon(
-              Icons.help_outline,
-              color: Colors.white,
-              size: 30,
-            ),
-            SizedBox(
-              width: 8,
+            TextField(
+              style: TextStyle(color: Colors.white),
+              decoration: InputDecoration(
+                  hintText: 'Enter city name',
+                  hintStyle: TextStyle(color: Colors.white)),
             ),
           ],
         ),
+        actions: [
+          Icon(
+            Icons.qr_code_scanner,
+            color: Colors.white,
+            size: 28,
+          ),
+          SizedBox(
+            width: 8,
+          ),
+          Icon(
+            Icons.notifications,
+            color: Colors.white,
+            size: 28,
+          ),
+          SizedBox(
+            width: 8,
+          ),
+          Icon(
+            Icons.help_outline,
+            color: Colors.white,
+            size: 30,
+          ),
+          SizedBox(
+            width: 8,
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -121,30 +117,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       bottomNavigationBar: bottomNavigation(),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   type: BottomNavigationBarType.fixed,
-      //   items: [
-      //     BottomNavigationBarItem(
-      //       label: "Home",
-      //       icon: Icon(Icons.home_filled),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: "Store",
-      //       icon: Icon(Icons.home_filled),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: "Insurance",
-      //       icon: Icon(Icons.home_filled),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: "Wealth",
-      //       icon: Icon(Icons.home_filled),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: "History",
-      //       icon: Icon(Icons.home_filled),
-      //     )
-      //   ],
     );
   }
 }

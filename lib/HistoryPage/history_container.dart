@@ -40,7 +40,7 @@ class historyContainer extends StatelessWidget {
                   height: 40,
                   width: 40,
                   decoration: BoxDecoration(
-                    color: Colors.purple[800],
+                    color: Color.fromRGBO(119, 12, 143, 1.0),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
@@ -189,7 +189,7 @@ class historyContainer extends StatelessWidget {
                               color: Colors.grey.shade300, width: 2)),
                       child: Icon(
                         FontAwesomeIcons.arrowRight,
-                        color: Colors.purple[800],
+                        color: Color.fromRGBO(119, 12, 143, 1.0),
                         size: 30,
                       ),
                     ),
@@ -214,7 +214,7 @@ class historyContainer extends StatelessWidget {
                             Border.all(color: Colors.grey.shade300, width: 2)),
                     child: Icon(
                       FontAwesomeIcons.arrowRightArrowLeft,
-                      color: Colors.purple[800],
+                      color: Color.fromRGBO(119, 12, 143, 1.0),
                       size: 25,
                     ),
                   ),
@@ -238,7 +238,7 @@ class historyContainer extends StatelessWidget {
                             Border.all(color: Colors.grey.shade300, width: 2)),
                     child: Icon(
                       Icons.share_outlined,
-                      color: Colors.purple[800],
+                      color: Color.fromRGBO(119, 12, 143, 1.0),
                       size: 30,
                     ),
                   ),

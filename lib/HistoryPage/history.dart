@@ -16,7 +16,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
       child: Scaffold(
         backgroundColor: Color.fromRGBO(240, 226, 255, 1.0),
         appBar: AppBar(
-          backgroundColor: Colors.green[700],
+          backgroundColor: Color.fromRGBO(13, 119, 64, 1.0),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
