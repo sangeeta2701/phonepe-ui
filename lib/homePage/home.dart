@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:phonepe/homePage/blue_row.dart';
 import 'package:phonepe/homePage/bottom_navigation.dart';
 import 'package:phonepe/homePage/recharge_bill_container.dart';
+import 'package:phonepe/homePage/sponsored.dart';
 import 'package:phonepe/homePage/upper_container.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,8 +13,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _currentIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,20 +98,20 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             upperContainer(),
             SizedBox(
-              height: 10,
+              height: 8,
             ),
             blueContainer(),
             SizedBox(
-              height: 10,
+              height: 8,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: RechargeBillContainer(),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: RechargeBillContainer(),
+              child: SponsoredContainer(),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(),
           ],
         ),
       ),

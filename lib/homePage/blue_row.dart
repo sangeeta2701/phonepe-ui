@@ -18,7 +18,7 @@ class blueContainer extends StatelessWidget {
               height: 80,
               width: 120,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(37, 145, 227, 1.0),
+                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Column(
@@ -48,7 +48,7 @@ class blueContainer extends StatelessWidget {
               height: 80,
               width: 120,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(37, 145, 227, 1.0),
+                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Column(
@@ -78,7 +78,7 @@ class blueContainer extends StatelessWidget {
               height: 80,
               width: 120,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(37, 145, 227, 1.0),
+                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Column(

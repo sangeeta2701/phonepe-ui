@@ -64,7 +64,7 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.mobile_friendly,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 45,
+                  size: 35,
                 ),
                 SizedBox(
                   height: 10,
@@ -112,7 +112,7 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   FontAwesomeIcons.satelliteDish,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 45,
+                  size: 35,
                 ),
                 SizedBox(
                   height: 10,
@@ -127,14 +127,14 @@ class firstColumn extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 25,
             ),
             Column(
               children: [
                 Icon(
                   FontAwesomeIcons.sackDollar,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 40,
+                  size: 35,
                 ),
                 SizedBox(
                   height: 10,
@@ -160,7 +160,7 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.lightbulb_outlined,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 45,
+                  size: 40,
                 ),
                 SizedBox(
                   height: 10,
@@ -182,10 +182,10 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.propane_tank_outlined,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 45,
+                  size: 40,
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 Text(
                   "Book A\nCylinder",
@@ -199,13 +199,14 @@ class firstColumn extends StatelessWidget {
           ],
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
               children: [
                 Icon(
                   Icons.credit_card,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 45,
+                  size: 40,
                 ),
                 SizedBox(
                   height: 10,
@@ -220,13 +221,13 @@ class firstColumn extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 10,
+              height: 12,
             ),
             Column(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: 40,
+                  width: 40,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: Color.fromRGBO(119, 12, 143, 1.0),
