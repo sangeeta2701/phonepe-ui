@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:phonepe/homePage/address.dart';
 import 'package:phonepe/homePage/blue_row.dart';
 import 'package:phonepe/homePage/bottom_navigation.dart';
 import 'package:phonepe/homePage/recharge_bill_container.dart';
@@ -31,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             child: Icon(
               Icons.person_outline,
-              color: Colors.purple,
+              color: Color.fromRGBO(119, 12, 143, 1.0),
               size: 28,
             ),
           ),
@@ -45,7 +46,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AddressScreen()));
+                      },
                       child: AutoSizeText(
                         "Add Address",
                         style: TextStyle(
