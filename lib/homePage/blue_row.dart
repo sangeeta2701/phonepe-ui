@@ -7,103 +7,102 @@ class blueContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Container(
-              height: 80,
-              width: 120,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Icon(
-                      Icons.account_balance_wallet_outlined,
-                      color: Colors.white,
-                      size: 30,
-                    ),
+    double iconSize = 28;
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: Container(
+            height: 70,
+            width: 100,
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Icon(
+                    Icons.account_balance_wallet_outlined,
+                    color: Colors.white,
+                    size: iconSize,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Text(
-                      "Phonepe Wallet",
-                      style: TextStyle(color: Colors.white),
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Text(
+                    "Phonepe Wallet",
+                    style: TextStyle(color: Colors.white, fontSize: 12),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 12.0, right: 12),
-            child: Container(
-              height: 80,
-              width: 120,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Icon(
-                      Icons.card_giftcard,
-                      color: Colors.white,
-                      size: 30,
-                    ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 5.0, right: 5),
+          child: Container(
+            height: 70,
+            width: 100,
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Icon(
+                    Icons.card_giftcard,
+                    color: Colors.white,
+                    size: iconSize,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Text(
-                      "Rewards",
-                      style: TextStyle(color: Colors.white),
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Text(
+                    "Rewards",
+                    style: TextStyle(color: Colors.white, fontSize: 12),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: Container(
-              height: 80,
-              width: 120,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Icon(
-                      Icons.campaign_outlined,
-                      color: Colors.white,
-                      size: 30,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
-                    child: Text(
-                      "Gift RS100\nCashback!",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ],
-              ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(right: 8.0),
+          child: Container(
+            height: 70,
+            width: 100,
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(24, 89, 175, 0.8470588235294118),
+              borderRadius: BorderRadius.circular(12),
             ),
-          )
-        ],
-      ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Icon(
+                    Icons.campaign_outlined,
+                    color: Colors.white,
+                    size: iconSize,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Text(
+                    "Refer & Earn 100",
+                    style: TextStyle(color: Colors.white, fontSize: 12),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        )
+      ],
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class upperContainer extends StatelessWidget {
@@ -7,6 +8,7 @@ class upperContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double iconSize = 28;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -21,12 +23,12 @@ class upperContainer extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 15, top: 15),
-                  child: Text(
+                  child: AutoSizeText(
                     "Transfer Money",
                     style: TextStyle(
                         color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14),
                   ),
                 ),
                 Padding(
@@ -69,14 +71,15 @@ class upperContainer extends StatelessWidget {
                         child: Icon(
                           Icons.person_outline_outlined,
                           color: Colors.white,
-                          size: 35,
+                          size: iconSize,
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 10.0),
-                        child: Text(
+                        child: AutoSizeText(
                           "To Mobile\n Number",
                           style: TextStyle(
+                            fontSize: 12,
                             color: Colors.black,
                           ),
                         ),
@@ -96,14 +99,15 @@ class upperContainer extends StatelessWidget {
                       child: Icon(
                         Icons.account_balance,
                         color: Colors.white,
-                        size: 35,
+                        size: iconSize,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0),
-                      child: Text(
+                      child: AutoSizeText(
                         "To Bank/\nUPI ID",
                         style: TextStyle(
+                          fontSize: 12,
                           color: Colors.black,
                         ),
                       ),
@@ -122,14 +126,15 @@ class upperContainer extends StatelessWidget {
                       child: Icon(
                         Icons.arrow_downward,
                         color: Colors.white,
-                        size: 35,
+                        size: iconSize,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0),
-                      child: Text(
+                      child: AutoSizeText(
                         "To Self\n Account",
                         style: TextStyle(
+                          fontSize: 12,
                           color: Colors.black,
                         ),
                       ),
@@ -150,14 +155,15 @@ class upperContainer extends StatelessWidget {
                         child: Icon(
                           Icons.account_balance_outlined,
                           color: Colors.white,
-                          size: 35,
+                          size: iconSize,
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 10.0),
-                        child: Text(
+                        child: AutoSizeText(
                           "Check Bank\nBalance",
                           style: TextStyle(
+                            fontSize: 12,
                             color: Colors.black,
                           ),
                         ),

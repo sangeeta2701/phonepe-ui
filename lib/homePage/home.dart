@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:phonepe/homePage/blue_row.dart';
 import 'package:phonepe/homePage/bottom_navigation.dart';
@@ -43,9 +44,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Text(
-                      "Add Addr...",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: AutoSizeText(
+                        "Add Address",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -62,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                   hintText: 'Enter city name',
-                  hintStyle: TextStyle(color: Colors.white)),
+                  hintStyle: TextStyle(color: Colors.white, fontSize: 12)),
             ),
           ],
         ),

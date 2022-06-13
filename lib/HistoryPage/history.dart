@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:phonepe/HistoryPage/history_container.dart';
@@ -34,9 +35,12 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 ),
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: AutoSizeText(
                     "Transaction Successful",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -44,7 +48,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                     hintText: 'Enter time and date',
-                    hintStyle: TextStyle(color: Colors.white)),
+                    hintStyle: TextStyle(color: Colors.white, fontSize: 12)),
               ),
             ],
           ),
@@ -73,14 +77,14 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         color: Colors.black,
                         size: 25,
                       ),
-                      Text(
+                      AutoSizeText(
                         "Contact PhonePe Support",
-                        style: TextStyle(color: Colors.black, fontSize: 15),
+                        style: TextStyle(color: Colors.black, fontSize: 12),
                       ),
                       Icon(
                         Icons.arrow_forward_ios_outlined,
                         color: Colors.black,
-                        size: 20,
+                        size: 25,
                       )
                     ],
                   ),

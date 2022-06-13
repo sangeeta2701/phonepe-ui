@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -9,7 +10,7 @@ class RechargeBillContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: 200,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -24,18 +25,18 @@ class RechargeBillContainer extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15.0, left: 15),
             child: Align(
               alignment: Alignment.centerLeft,
-              child: Text(
+              child: AutoSizeText(
                 "Recharge & Pay Bills",
                 style: TextStyle(
                     color: Colors.black,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14),
               ),
             ),
           ),
           //1st row
           Padding(
-            padding: const EdgeInsets.only(top: 10.0),
+            padding: const EdgeInsets.only(top: 15.0),
             child: firstColumn(),
           ),
           // SizedBox(
@@ -54,6 +55,8 @@ class firstColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double iconSize = 28;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -64,15 +67,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.mobile_friendly,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 35,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Mobile\nRecharge",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -86,15 +90,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   FontAwesomeIcons.houseCircleCheck,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 35,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Rent\nPayment",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -112,15 +117,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   FontAwesomeIcons.satelliteDish,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 35,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "DTH",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -134,15 +140,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   FontAwesomeIcons.sackDollar,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 35,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Loan\nRepayment",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -160,15 +167,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.lightbulb_outlined,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 40,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Electricity",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -182,15 +190,16 @@ class firstColumn extends StatelessWidget {
                 Icon(
                   Icons.propane_tank_outlined,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 40,
+                  size: iconSize,
                 ),
                 SizedBox(
-                  height: 8,
+                  height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Book A\nCylinder",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -199,22 +208,23 @@ class firstColumn extends StatelessWidget {
           ],
         ),
         Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
               children: [
                 Icon(
                   Icons.credit_card,
                   color: Color.fromRGBO(119, 12, 143, 1.0),
-                  size: 40,
+                  size: iconSize,
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "Credit Card\nBill Payment",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),
@@ -235,16 +245,17 @@ class firstColumn extends StatelessWidget {
                   child: Icon(
                     Icons.arrow_forward_ios_rounded,
                     color: Colors.white,
-                    size: 30,
+                    size: iconSize,
                   ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
-                Text(
+                AutoSizeText(
                   "See All",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontSize: 12,
                     color: Colors.black,
                   ),
                 ),

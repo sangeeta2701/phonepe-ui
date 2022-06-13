@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class SponsoredContainer extends StatelessWidget {
@@ -18,12 +19,12 @@ class SponsoredContainer extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15.0, left: 15),
             child: Align(
               alignment: Alignment.centerLeft,
-              child: Text(
+              child: AutoSizeText(
                 "Sponsored Links",
                 style: TextStyle(
                     color: Colors.black,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14),
               ),
             ),
           ),
@@ -49,10 +50,11 @@ class SponsoredContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "abhibus",
                       textAlign: TextAlign.center,
                       style: TextStyle(
+                        fontSize: 12,
                         color: Colors.black,
                       ),
                     ),
@@ -78,10 +80,11 @@ class SponsoredContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "Ajio",
                       textAlign: TextAlign.center,
                       style: TextStyle(
+                        fontSize: 12,
                         color: Colors.black,
                       ),
                     ),
@@ -112,10 +115,11 @@ class SponsoredContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "Rummycul\nture",
                       textAlign: TextAlign.center,
                       style: TextStyle(
+                        fontSize: 12,
                         color: Colors.black,
                       ),
                     ),
@@ -146,10 +150,11 @@ class SponsoredContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "First Games\nRummy",
                       textAlign: TextAlign.center,
                       style: TextStyle(
+                        fontSize: 12,
                         color: Colors.black,
                       ),
                     ),

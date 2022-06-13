@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -21,12 +22,12 @@ class historyContainer extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 18.0, left: 10),
-            child: Text(
+            child: AutoSizeText(
               "Paid to",
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18),
+                  fontSize: 14),
             ),
           ),
           SizedBox(
@@ -91,8 +92,9 @@ class historyContainer extends StatelessWidget {
                     hintText: 'Amount',
                     border: InputBorder.none,
                     hintStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: Colors.black,
-                      fontSize: 16,
+                      fontSize: 12,
                     ),
                   ),
                 ),
@@ -110,9 +112,9 @@ class historyContainer extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 10.0),
-                child: Text(
+                child: AutoSizeText(
                   "Banking Name :",
-                  style: TextStyle(color: Colors.grey[500], fontSize: 15),
+                  style: TextStyle(color: Colors.grey[500], fontSize: 12),
                 ),
               ),
               SizedBox(
@@ -150,9 +152,9 @@ class historyContainer extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 12.0),
-                child: Text(
+                child: AutoSizeText(
                   "Transfer Details",
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.black, fontSize: 12),
                 ),
               ),
               Padding(
@@ -181,8 +183,8 @@ class historyContainer extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      height: 45,
-                      width: 45,
+                      height: 40,
+                      width: 40,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           border: Border.all(
@@ -190,14 +192,14 @@ class historyContainer extends StatelessWidget {
                       child: Icon(
                         FontAwesomeIcons.arrowRight,
                         color: Color.fromRGBO(119, 12, 143, 1.0),
-                        size: 30,
+                        size: 25,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text(
+                      child: AutoSizeText(
                         "Send Again",
-                        style: TextStyle(color: Colors.black, fontSize: 15),
+                        style: TextStyle(color: Colors.black, fontSize: 12),
                       ),
                     )
                   ],
@@ -206,8 +208,8 @@ class historyContainer extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 45,
-                    width: 45,
+                    height: 40,
+                    width: 40,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         border:
@@ -220,9 +222,9 @@ class historyContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "View History",
-                      style: TextStyle(color: Colors.black, fontSize: 15),
+                      style: TextStyle(color: Colors.black, fontSize: 12),
                     ),
                   )
                 ],
@@ -230,8 +232,8 @@ class historyContainer extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 45,
-                    width: 45,
+                    height: 40,
+                    width: 40,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         border:
@@ -244,9 +246,9 @@ class historyContainer extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(
+                    child: AutoSizeText(
                       "Share Receipt",
-                      style: TextStyle(color: Colors.black, fontSize: 15),
+                      style: TextStyle(color: Colors.black, fontSize: 12),
                     ),
                   )
                 ],
